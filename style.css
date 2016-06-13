@@ -1,0 +1,19 @@
+.movie {
+  display:inline
+}
+.template {
+  display:none;
+
+}
+.image{
+  height: 300px;
+  width: 200px;
+
+}
+.poster{
+  display: inline-block;
+  padding-right: 10px
+}
+.dangerous{
+  display:none
+}
