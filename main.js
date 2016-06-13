@@ -10,9 +10,11 @@ function passData() {
     $('.dangerous').hide()
     var movie = $('.getMovie').val()
     var year = $('.movieYear').val()
+    var type = $('.selectSize').val()
+    console.log(type);
     console.log("clicked");
 
-    $.ajax(`http://www.omdbapi.com/?s=${movie}&y=${year}`)
+    $.ajax(`http://www.omdbapi.com/?s=${movie}&y=${year}&type=${type}`)
         .done(data => {
           $('.movieSelection').empty()
             // $('.name').text(data.)
@@ -49,6 +51,8 @@ function createMulitpleMovies (movies){
     })
 
 }
+
+function 
 
 function goToIMDB (){
     var url = $(this).data('url')
